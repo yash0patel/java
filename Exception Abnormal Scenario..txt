@@ -1,0 +1,43 @@
+Exception: Abnormal Scenario.
+-------------
+statement---1
+statement---2
+statement---3
+statement---4
+statement---5
+	ArithmeticException---100-raise exception--Code Crashed
+statement---6 					   -------------
+statement---7						JVM Abnormal Terminate--[Exception STOP]
+statement---8
+statement---9
+statement---10
+
+-----------------------------------------------------------------------------------------------
+
+					Type of Exception
+			----------------------------------------------------	
+		1) Checked Exception					2) Unchecked Exception
+
+		CompileTime---Compiler					Runtime---JVM
+
+-----------------------------------------------------------------------------------------------
+
+				Hierarchy of Exception
+				----------------------
+					Object(c)
+					    |
+					Throwable(c)
+					    |
+					Exception(c)
+					    |
+		---------------------------------------------------------
+		|--checked						|--Unchecked
+		|						---RuntimeException(C)
+	--IOException(C)						|
+	--SQLException(C)					--ArithmeticException(C)
+	--FileNotFoundException(C)				--NullPointerException(C)
+	....							--StringIndexOutOfBoundException(C)
+								--NumberFormateException(C)
+								--ClasscastException(C)
+								--ArryaIndexoutof BoundException(C)
+								....

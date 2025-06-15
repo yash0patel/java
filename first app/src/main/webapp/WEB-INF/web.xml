@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>first app</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  		<param-name>lang1</param-name>
+  		<param-value>c language</param-value>
+  </context-param>
+  <context-param>
+  		<param-name>lang2</param-name>
+  		<param-value>c++ language</param-value>
+  </context-param>
+  <context-param>
+  		<param-name>lang3</param-name>
+  		<param-value>java language</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>servlet1</servlet-name>
+  	<servlet-class>com.royal.controller.FirstServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet1</servlet-name>
+  	<url-pattern>/xyz</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>servlet2</servlet-name>
+  	<servlet-class>com.royal.controller.Table</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet2</servlet-name>
+  	<url-pattern>/table</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>servlet3</servlet-name>
+  	<servlet-class>com.royal.controller.PrimeNumberServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>servlet3</servlet-name>
+  	<url-pattern>/prime</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>googlesearchservlet</servlet-name>
+  	<servlet-class>com.royal.controller.GoogleSearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>googlesearchservlet</servlet-name>
+  	<url-pattern>/GoogleSearchServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>loginservlet</servlet-name>
+  	<servlet-class>com.royal.controller.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginservlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>inputtypeservlet</servlet-name>
+  	<servlet-class>com.royal.controller.InputTypeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>inputtypeservlet</servlet-name>
+  	<url-pattern>/InputTypeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registerservlet</servlet-name>
+  	<servlet-class>com.royal.controller.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerservlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>listregisterservlet</servlet-name>
+  	<servlet-class>com.royal.controller.ListRegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>listregisterservlet</servlet-name>
+  	<url-pattern>/ListRegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>firstservletconfig</servlet-name>
+  	<servlet-class>com.royal.controller.FirstServletConfig</servlet-class>
+  	
+  	<init-param>
+  		<param-name>URLNAME</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
+  	</init-param>
+	<init-param>
+  		<param-name>DRIVERCLASS</param-name>
+  		<param-value>mysql.cj.jdbc.Driver</param-value>
+  	</init-param>
+	<init-param>
+  		<param-name>USERNAME</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>PASSWORD</param-name>
+  		<param-value>root</param-value>
+  	</init-param>        
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>firstservletconfig</servlet-name>
+  	<url-pattern>/FirstServletConfig</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>secondservletconfig</servlet-name>
+  	<servlet-class>com.royal.controller.SecondServletConfig</servlet-class>
+  	
+  	<init-param>
+  		<param-name>URLNAME</param-name>
+  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
+  	</init-param>
+	<init-param>
+  		<param-name>DRIVERCLASS</param-name>
+  		<param-value>mysql.cj.jdbc.Driver</param-value>
+  	</init-param>
+	<init-param>
+  		<param-name>USERNAME</param-name>
+  		<param-value>root</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>PASSWORD</param-name>
+  		<param-value>root</param-value>
+  	</init-param>        
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>secondservletconfig</servlet-name>
+  	<url-pattern>/SecondServletConfig</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>thirdservletcontext</servlet-name>
+  	<servlet-class>com.royal.controller.ThirdServletContext</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>thirdservletcontext</servlet-name>
+  	<url-pattern>/ThirdServletContext</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>fourthservletcontext</servlet-name>
+  	<servlet-class>com.royal.controller.FourthServletContext</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>fourthservletcontext</servlet-name>
+  	<url-pattern>/FourthServletContext</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>StudentRegisterservlet</servlet-name>
+  	<servlet-class>com.royal.controller.studentregisterservlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>StudentRegisterservlet</servlet-name>
+  	<url-pattern>/studentregisterservlet</url-pattern>
+  </servlet-mapping>
+  	
+</web-app>

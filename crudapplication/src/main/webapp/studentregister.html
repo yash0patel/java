@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>student Registration</title>
+</head>
+<body>
+	<h3>Student Registration Page</h3>
+	<form action="InsertStudentServlet" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Std :</td>
+                <td><input type="text" name="std"></td>
+            </tr>
+            <tr>
+                <td>Marks :</td>
+                <td><input type="number" name="marks"></td>
+            </tr>
+           	<tr>
+                <td>Date of birth :</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+				<td>Gender :</td>
+				<td><input type="radio" name="gender" value="male"> Male</td>
+				<td><input type="radio" name="gender" value="female"> Female</td>
+			</tr>
+            <tr>
+				<td>Hobbies :</td>
+				<td><input type="checkbox" name="hobbies" value="sports"> Sports</td>
+				<td><input type="checkbox" name="hobbies" value="music"> Music</td>
+				<td><input type="checkbox" name="hobbies" value="reading"> Reading</td>
+			</tr>
+			<tr>
+				<td>file upload</td>
+                <td>
+                    <input type="file" name="resource"/>
+                </td>
+			</tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

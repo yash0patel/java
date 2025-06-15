@@ -1,0 +1,34 @@
+# Ignore target (compiled files)
+target/
+
+# Ignore IntelliJ IDEA project files
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Ignore Eclipse project files
+*.classpath
+*.project
+*.settings/
+
+# Ignore Maven logs
+log/
+logs/
+
+# Ignore build tools output
+build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment and properties files
+*.env
+application.properties
+application-dev.properties
+application-prod.properties
+
+
+# Ignore Eclipse workspace metadata
+.metadata/

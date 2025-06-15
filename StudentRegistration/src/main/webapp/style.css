@@ -1,0 +1,267 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header css*/
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* nav bar css*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 14px;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    display: flex;
+    border: 2px solid #2980b9;
+    background-color: transparent;
+    color: #2980b9;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    padding: 12px 24px;
+}
+
+nav button:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+
+/* main part css*/
+main {
+    padding: 30px;
+    min-height: 100vh;
+    }
+
+
+/* Student details table css*/
+#studentTable-section h2{
+    padding-bottom: 25px;
+}
+
+#studentTable-section{
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.student-table th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.td-btn {
+    padding: 4px;
+    border: none;
+    border: #2980b9 solid 1px;
+    color: white;
+    text-align: center;
+}
+
+.td-btn button {
+    border: 1px solid #2980b9;
+    color: #2980b9;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    padding: 5px;
+    width: 100%;
+}
+
+.td-btn button:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+
+/* insert form css */
+#insertForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#insertForm h2 {
+    padding-bottom: 25px;
+}
+
+.insertForm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.insertForm-table th,
+.insertForm-table td {
+    border: #297fb9 dotted 1px;
+    text-align: left;
+    padding: 8px;
+}
+
+.insertForm-table th {
+    text-align: center;
+    background-color: #2980b9;
+    color: white;
+}
+
+.insertForm-table td>input {
+    padding: 8px 0;
+    border: none;
+    border-bottom: #297fb95c solid;
+    background-color: transparent;
+    /* font-size: 1rem; */
+    outline: none;
+    width: 100%;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.display-flex-gap {
+    display: flex;
+    gap: 5px;
+}
+
+.hover-focus-effect :focus,
+.hover-focus-effect :hover {
+    border-bottom: #297fb9 dashed;
+}
+
+.insertForm-table td>div :hover {
+    border-bottom: none;
+}
+.insertForm-table textarea#address {
+    width: 60%;
+    height: 80px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.insertForm-table select{
+    width: 200px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.insertForm-table select option {
+    padding: 10px;
+    color: black;
+}
+
+.insertForm-table select:hover {
+    border-color: #666;
+}
+
+.insertForm-table select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.td-btn-insertform {
+    padding: 10px;
+    border: none;
+    background-color: #2980b9;
+    border: #2980b9 solid 1px;
+    color: white;
+    text-align: center;
+}
+
+.td-btn-insertform button {
+    color: #2980b9;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    font-size: larger;
+    padding: 8px;
+}
+
+.td-btn-insertform button:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* placeholder */
+.insertForm-table input::placeholder,
+.insertForm-table textarea::placeholder,
+.insertForm-table .font-error{
+    color: red; 
+    font-style: italic; 
+    opacity: 0.7; 
+    font-size: smaller;
+}
+
+.set-placeholder{
+	position: relative;
+}
+
+.insertForm-table .font-error {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+div.set-opacity-effect{
+	opacity: 0.1;
+}
+
+.insertForm-table .set-placeholder:hover .set-opacity-effect,
+.insertForm-table .set-placeholder:focus .set-opacity-effect {
+    opacity: 1;
+}
+
+.insertForm-table .set-placeholder:hover .font-error,
+.insertForm-table .set-placeholder:focus .font-error{
+    display: none;
+}
+
+/* footer css*/
+footer {
+    text-align: center;
+    font-size: smaller;
+    padding: 4px;
+    background-color: #2c3e50;
+}
